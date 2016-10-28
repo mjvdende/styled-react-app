@@ -7,14 +7,14 @@ const Input = styled.input`
   margin: 0.5em;
   color: ${props => props.theme.textColor};
   background: ${props => props.theme.bgColor};
-  border: 0px solid black;
+  border: 0 solid black;
   border-bottom: 2px solid ${props => props.theme.mainColor};
   border-radius: 5px;
   outline: none;
 
   &:hover {
     color: ${props => props.theme.textColorHover};
-    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
 `;
 

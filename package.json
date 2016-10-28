@@ -5,7 +5,10 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "2.25.0",
-    "react-scripts": "0.7.0"
+    "react-scripts": "0.7.0",
+    "stylelint": "^7.5.0",
+    "stylelint-config-standard": "^14.0.0",
+    "stylelint-processor-styled-components": "0.0.4"
   },
   "dependencies": {
     "color-js": "^1.0.3",
@@ -21,6 +24,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "lint:css": "stylelint './src/**/*.js'"
   }
 }
