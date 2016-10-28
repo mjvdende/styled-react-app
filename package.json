@@ -32,6 +32,6 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "lint:css": "stylelint './src/**/*.js'",
-    "test-storybook": "storyshots"
+    "test-storybook": "NODE_ENV=development storyshots"
   }
 }
