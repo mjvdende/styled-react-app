@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import {
+  DefaultButton,
+  PrimaryButton,
+  SuccessButton,
+  InfoButton,
+  WarningButton,
+  DangerButton
+} from './Buttons';
 
 import logo from './logo.svg';
 
@@ -20,6 +28,7 @@ const Intro = styled.p`
   font-size: large;
 `;
 
+
 class App extends Component {
   render() {
     return (
@@ -31,6 +40,12 @@ class App extends Component {
         <Intro>
           To get started, edit <code>src/App.js</code> and save to reload.
         </Intro>
+        <DefaultButton>DefaultButton</DefaultButton>
+        <PrimaryButton>PrimaryButton</PrimaryButton>
+        <SuccessButton>SuccessButton</SuccessButton>
+        <InfoButton>InfoButton</InfoButton>
+        <WarningButton>WarningButton</WarningButton>
+        <DangerButton>DangerButton</DangerButton>
       </Wrapper>
     );
   }
