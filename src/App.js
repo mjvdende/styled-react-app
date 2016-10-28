@@ -14,6 +14,7 @@ import logo from './logo.svg';
 const Wrapper = styled.div`
   text-align: center;
 `;
+
 const Header = styled.div`
   background-color: #222;
   height: 150px;
