@@ -10,3 +10,5 @@ function loadStories() {
 }
 
 configure(loadStories, module);
+
+stories.addDecorator(withKnobs);
