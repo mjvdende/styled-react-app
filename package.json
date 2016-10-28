@@ -8,8 +8,11 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "color-js": "^1.0.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-mixin-decorator": "^1.2.3",
+    "react-tween-state": "^0.1.5",
     "styled-components": "^1.0.9"
   },
   "scripts": {

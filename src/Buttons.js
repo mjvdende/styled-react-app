@@ -1,4 +1,6 @@
+import { PropTypes } from 'react';
 import styled from 'styled-components';
+import Color from 'color-js';
 
 export const Button = styled.button`
   display: inline-block;
@@ -54,6 +56,10 @@ export const WarningButton = styled(Button)`
 
 export const DangerButton = styled(Button)`
   color: #fff;
-  background-color: #d9534f;
+  background-color: ${({ lightness = 0 }) => Color("#d9534f").lightenByRatio(lightness)};
   border-color: #d43f3a;
 `;
+
+DangerButton.propTypes = {
+  lightness: PropTypes.number,
+}
