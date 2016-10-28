@@ -6,6 +6,7 @@
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "2.25.0",
     "@kadira/storybook-addon-knobs": "^1.4.1",
+    "@kadira/storyshots": "^2.0.1",
     "enzyme": "^2.5.1",
     "expect": "^1.20.2",
     "react-addons-test-utils": "^15.3.2",
@@ -30,6 +31,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "lint:css": "stylelint './src/**/*.js'"
+    "lint:css": "stylelint './src/**/*.js'",
+    "test-storybook": "storyshots"
   }
 }
