@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import {
-  DefaultButton,
-  PrimaryButton,
-  SuccessButton,
-  InfoButton,
-  WarningButton,
-  DangerButton
-} from './Buttons';
+
+import { Grid, Col } from './Grid';
 
 import logo from './logo.svg';
 
@@ -41,12 +35,20 @@ class App extends Component {
         <Intro>
           To get started, edit <code>src/App.js</code> and save to reload.
         </Intro>
-        <DefaultButton>DefaultButton</DefaultButton>
-        <PrimaryButton>PrimaryButton</PrimaryButton>
-        <SuccessButton>SuccessButton</SuccessButton>
-        <InfoButton>InfoButton</InfoButton>
-        <WarningButton>WarningButton</WarningButton>
-        <DangerButton>DangerButton</DangerButton>
+
+        <Grid margin={10} columns={12} configs={{
+          xs: '12|12|12|12',
+          sm: '12|12|6|6',
+          md: '6|6|6|6',
+          lg: '4|4|4|12',
+          xl: '3|3|3|3',
+        }}>
+          <Col></Col>
+          <Col></Col>
+          <Col></Col>
+          <Col></Col>
+        </Grid>
+
       </Wrapper>
     );
   }
