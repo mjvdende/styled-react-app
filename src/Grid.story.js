@@ -13,11 +13,11 @@ stories
     const margin = number('Margin', 10);
     const columns = number('Columns', 12);
     const configs = {
-      xs: '12|12|12|12',
-      sm: '12|12|6|6',
-      md: '6|6|6|6',
-      lg: '4|4|4|12',
-      xl: '3|3|3|3',
+      xs: text('XSmall', '12|12|12|12'),
+      sm: text('Small', '12|12|6|6'),
+      md: text('Medium', '6|6|6|6'),
+      lg: text('Large', '4|4|4|12'),
+      xl: text('Xlarge', '3|3|3|3'),
     };
     return (
       <Grid {...{ columns, margin, configs }} >

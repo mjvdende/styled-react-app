@@ -17,7 +17,7 @@ const Col = styled.div`
 
 const Container = styled.div`
   display: block;
-  margin: ${props => props.margin / 2}px;
+  margin: -${props => props.margin / 2}px;
   ${props => Object.keys(props.configs).map(key => `
     @media ${breakpoints[key]} {
       ${props.configs[key].split('|').map((item, index) => `
